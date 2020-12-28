@@ -2,8 +2,8 @@ import config
 import telebot
 import os
 from telebot import types
-bot = telebot.TeleBot(config.token) 
-
+#bot = telebot.TeleBot(config.token) 
+bot = telebot.TeleBot(os.environ['TOKEN']) 
 list_user  = []
 @bot.message_handler(func=lambda message: True, content_types=['text'])
     
