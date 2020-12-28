@@ -2,9 +2,6 @@ import config
 import telebot
 import os
 from telebot import types
-
-
-#token = '1460014098:AAE7DNyazA0xwGpKTXdu0iQ0EKXSBeDz5hU'  # bot_rfj
 bot = telebot.TeleBot(config.token) 
 
 list_user  = []
